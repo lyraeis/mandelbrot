@@ -15,7 +15,7 @@ function render() {
       if (n == 0) {
         ctx.fillStyle = "rgb(0,0,0)"
       } else {
-        ctx.fillStyle = `hsl(${n/iterations*360},100%,50%)`
+        ctx.fillStyle = `hsl(${(n * 10) % 360},100%,50%)`
       }
       ctx.fillRect(x,y,1,1)
     }
